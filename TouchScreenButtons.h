@@ -1,7 +1,15 @@
-/*
-   TouchScreenButton.cpp - Library for creating buttons for the Seeed Studio TFT touch screen.
-   Created by Richard Kirkpatrick, 19 June 2014
-*/
+/*! \mainpage Main Page
+ *
+ * \section intro_sec Introduction
+ * \brief Arduino Library for creating buttons for the Seeed Studio TFT touch screen (Version 1)
+ * \author Richard Kirkpatrick
+ * \date 19 June 2014
+ * \copyright GNU Public License.
+
+ * See the Wiki documentation page for more info!
+ *
+ */
+
 
 #ifndef TOUCHSCREENBUTTONS_H_INCLUDED
 #define TOUCHSCREENBUTTONS_H_INCLUDED
@@ -10,6 +18,8 @@
 #include <TouchScreenGeometry.h>
 #include <TouchSceenStrings.h>
 
+///@class Button
+///@brief Abstract class for drawing rectangular buttons to the Seeed Studio TFT touch screen.
 class Button {
 public:
     ///@brief Default constructor for the Button class
@@ -32,8 +42,6 @@ public:
     @param myYStart The starting y-coordinate of the button.
     @param myWidth The width of the button.
     @param myHeight The height of the button.
-    @param myBorderColor The border color of the button. Default color is white.
-    @param myFillColor The fill color of the button. Default color is black.
     */
     void setValues(const int myXStart, const int myYStart, const int myWidth, const int myHeight);
 

@@ -1,0 +1,200 @@
+\hypertarget{class_button}{\section{Button Class Reference}
+\label{class_button}\index{Button@{Button}}
+}
+
+
+Abstract class for drawing rectangular buttons to the Seeed Studio T\+F\+T touch screen.  
+
+
+
+
+{\ttfamily \#include $<$Touch\+Screen\+Buttons.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_button_a3b36df1ae23c58aedb9e15a713159459}{\hyperlink{class_button_a3b36df1ae23c58aedb9e15a713159459}{Button} ()}\label{class_button_a3b36df1ae23c58aedb9e15a713159459}
+
+\begin{DoxyCompactList}\small\item\em Default constructor for the \hyperlink{class_button}{Button} class. \end{DoxyCompactList}\item 
+\hyperlink{class_button_a05d9eb876fbf996d19ccd50701d520d6}{Button} (const int my\+X\+Start, const int my\+Y\+Start, const int my\+Width, const int my\+Height, unsigned int my\+Border\+Color, unsigned int my\+Fill\+Color)
+\begin{DoxyCompactList}\small\item\em Parameter constructor for the button class. \end{DoxyCompactList}\item 
+void \hyperlink{class_button_a60111eec4fe5e1c3c71b8b183fa76fdb}{set\+Values} (const int my\+X\+Start, const int my\+Y\+Start, const int my\+Width, const int my\+Height)
+\begin{DoxyCompactList}\small\item\em Sets the values of the button instance. \end{DoxyCompactList}\item 
+void \hyperlink{class_button_a915d85f07149cce21cc8b61f8b8a4496}{set\+Border\+Color} (unsigned int my\+Border\+Color)
+\begin{DoxyCompactList}\small\item\em Sets the border color of the button instance. \end{DoxyCompactList}\item 
+void \hyperlink{class_button_a66a48aee66e78d135c3333d6364d1643}{set\+Fill\+Color} (unsigned int my\+Fill\+Color)
+\begin{DoxyCompactList}\small\item\em Sets the fill color of the button instance. \end{DoxyCompactList}\item 
+\hypertarget{class_button_a10a7f30eaf80e1ea4b0f22491e12ca70}{const int \hyperlink{class_button_a10a7f30eaf80e1ea4b0f22491e12ca70}{get\+X\+Start} ()}\label{class_button_a10a7f30eaf80e1ea4b0f22491e12ca70}
+
+\begin{DoxyCompactList}\small\item\em Gets the left bound x-\/coordinate. \end{DoxyCompactList}\item 
+\hypertarget{class_button_aacd7d72bb3a462c8f781b8e7f69ee76a}{const int \hyperlink{class_button_aacd7d72bb3a462c8f781b8e7f69ee76a}{get\+Y\+Start} ()}\label{class_button_aacd7d72bb3a462c8f781b8e7f69ee76a}
+
+\begin{DoxyCompactList}\small\item\em Gets the upper bound y-\/coordinate. \end{DoxyCompactList}\item 
+\hypertarget{class_button_a921df8cffef29db191d86eefd5c51ace}{const int \hyperlink{class_button_a921df8cffef29db191d86eefd5c51ace}{get\+X\+End} ()}\label{class_button_a921df8cffef29db191d86eefd5c51ace}
+
+\begin{DoxyCompactList}\small\item\em Gets the right bound x-\/coordinate. \end{DoxyCompactList}\item 
+\hypertarget{class_button_ae3268227fca9cb8aa347b3b01036e3a2}{const int \hyperlink{class_button_ae3268227fca9cb8aa347b3b01036e3a2}{get\+Y\+End} ()}\label{class_button_ae3268227fca9cb8aa347b3b01036e3a2}
+
+\begin{DoxyCompactList}\small\item\em Gets the lower bound y-\/coordinate. \end{DoxyCompactList}\item 
+\hypertarget{class_button_a80e91267444afbf72ad6c2cb797c38cf}{const int \hyperlink{class_button_a80e91267444afbf72ad6c2cb797c38cf}{get\+Width} ()}\label{class_button_a80e91267444afbf72ad6c2cb797c38cf}
+
+\begin{DoxyCompactList}\small\item\em Gets the width of the button. \end{DoxyCompactList}\item 
+\hypertarget{class_button_ae9d2afc653f22428d42e796d4749a843}{const int \hyperlink{class_button_ae9d2afc653f22428d42e796d4749a843}{get\+Height} ()}\label{class_button_ae9d2afc653f22428d42e796d4749a843}
+
+\begin{DoxyCompactList}\small\item\em Gets the height of the button. \end{DoxyCompactList}\item 
+bool \hyperlink{class_button_a2da26aebe4d13bb3f930dab9a1361222}{is\+Pressed} (const int x\+Screen, const int y\+Screen)
+\begin{DoxyCompactList}\small\item\em Determines if the button was pressed. \end{DoxyCompactList}\item 
+\hypertarget{class_button_a0380207dc9e4edcd0272207a39c7cdeb}{void \hyperlink{class_button_a0380207dc9e4edcd0272207a39c7cdeb}{draw} ()}\label{class_button_a0380207dc9e4edcd0272207a39c7cdeb}
+
+\begin{DoxyCompactList}\small\item\em Draws the button. \end{DoxyCompactList}\item 
+\hypertarget{class_button_a4b365dabfed0a4664979bb2087b5dd4a}{void \hyperlink{class_button_a4b365dabfed0a4664979bb2087b5dd4a}{fill} ()}\label{class_button_a4b365dabfed0a4664979bb2087b5dd4a}
+
+\begin{DoxyCompactList}\small\item\em Fills the button. \end{DoxyCompactList}\item 
+void \hyperlink{class_button_ad2122745381c7a5366d9514ba34daee6}{button\+Display} (unsigned int my\+Border\+Color=0xf800, unsigned int my\+Fill\+Color=0x0000)
+\begin{DoxyCompactList}\small\item\em Displays the button when pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class for drawing rectangular buttons to the Seeed Studio T\+F\+T touch screen. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_button_a05d9eb876fbf996d19ccd50701d520d6}{\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\subsubsection[{Button}]{\setlength{\rightskip}{0pt plus 5cm}Button\+::\+Button (
+\begin{DoxyParamCaption}
+\item[{const int}]{my\+X\+Start, }
+\item[{const int}]{my\+Y\+Start, }
+\item[{const int}]{my\+Width, }
+\item[{const int}]{my\+Height, }
+\item[{unsigned int}]{my\+Border\+Color = {\ttfamily 0xffff}, }
+\item[{unsigned int}]{my\+Fill\+Color = {\ttfamily 0x0000}}
+\end{DoxyParamCaption}
+)}}\label{class_button_a05d9eb876fbf996d19ccd50701d520d6}
+
+
+Parameter constructor for the button class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+X\+Start} & The starting x-\/coordinate of the button. \\
+\hline
+{\em my\+Y\+Start} & The starting y-\/coordinate of the button. \\
+\hline
+{\em my\+Width} & The width of the button. \\
+\hline
+{\em my\+Height} & The height of the button. \\
+\hline
+{\em my\+Border\+Color} & The border color of the button. Default color is white. \\
+\hline
+{\em my\+Fill\+Color} & The fill color of the button. Default color is black. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_button_ad2122745381c7a5366d9514ba34daee6}{\index{Button@{Button}!button\+Display@{button\+Display}}
+\index{button\+Display@{button\+Display}!Button@{Button}}
+\subsubsection[{button\+Display}]{\setlength{\rightskip}{0pt plus 5cm}void Button\+::button\+Display (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{my\+Border\+Color = {\ttfamily 0xf800}, }
+\item[{unsigned int}]{my\+Fill\+Color = {\ttfamily 0x0000}}
+\end{DoxyParamCaption}
+)}}\label{class_button_ad2122745381c7a5366d9514ba34daee6}
+
+
+Displays the button when pressed. 
+
+The default border color is R\+E\+D and the default fill color is B\+L\+A\+C\+K. \hyperlink{class_button}{Button}'s border color and fill color is updated. The button is then drawn. After a 100 ms delay, the button is reset back to its original values. 
+\begin{DoxyParams}{Parameters}
+{\em my\+Border\+Color} & The border color of the button. Default color is red. \\
+\hline
+{\em my\+Fill\+Color} & The fill color of the button. Default color is black. \\
+\hline
+\end{DoxyParams}
+$<$ Saves the original border color
+
+$<$ Saves the original fill color \hypertarget{class_button_a2da26aebe4d13bb3f930dab9a1361222}{\index{Button@{Button}!is\+Pressed@{is\+Pressed}}
+\index{is\+Pressed@{is\+Pressed}!Button@{Button}}
+\subsubsection[{is\+Pressed}]{\setlength{\rightskip}{0pt plus 5cm}bool Button\+::is\+Pressed (
+\begin{DoxyParamCaption}
+\item[{const int}]{x\+Screen, }
+\item[{const int}]{y\+Screen}
+\end{DoxyParamCaption}
+)}}\label{class_button_a2da26aebe4d13bb3f930dab9a1361222}
+
+
+Determines if the button was pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Screen} & The x-\/coordinate of the user's input. \\
+\hline
+{\em y\+Screen} & The y-\/coordinate of the user's input. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns True if the user pressed the button within the boundaries. False otherwise. 
+\end{DoxyReturn}
+\hypertarget{class_button_a915d85f07149cce21cc8b61f8b8a4496}{\index{Button@{Button}!set\+Border\+Color@{set\+Border\+Color}}
+\index{set\+Border\+Color@{set\+Border\+Color}!Button@{Button}}
+\subsubsection[{set\+Border\+Color}]{\setlength{\rightskip}{0pt plus 5cm}void Button\+::set\+Border\+Color (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{my\+Border\+Color}
+\end{DoxyParamCaption}
+)}}\label{class_button_a915d85f07149cce21cc8b61f8b8a4496}
+
+
+Sets the border color of the button instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Border\+Color} & The border color of the button instance. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_button_a66a48aee66e78d135c3333d6364d1643}{\index{Button@{Button}!set\+Fill\+Color@{set\+Fill\+Color}}
+\index{set\+Fill\+Color@{set\+Fill\+Color}!Button@{Button}}
+\subsubsection[{set\+Fill\+Color}]{\setlength{\rightskip}{0pt plus 5cm}void Button\+::set\+Fill\+Color (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{my\+Fill\+Color}
+\end{DoxyParamCaption}
+)}}\label{class_button_a66a48aee66e78d135c3333d6364d1643}
+
+
+Sets the fill color of the button instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Fill\+Color} & The fill color of the button instance. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_button_a60111eec4fe5e1c3c71b8b183fa76fdb}{\index{Button@{Button}!set\+Values@{set\+Values}}
+\index{set\+Values@{set\+Values}!Button@{Button}}
+\subsubsection[{set\+Values}]{\setlength{\rightskip}{0pt plus 5cm}void Button\+::set\+Values (
+\begin{DoxyParamCaption}
+\item[{const int}]{my\+X\+Start, }
+\item[{const int}]{my\+Y\+Start, }
+\item[{const int}]{my\+Width, }
+\item[{const int}]{my\+Height}
+\end{DoxyParamCaption}
+)}}\label{class_button_a60111eec4fe5e1c3c71b8b183fa76fdb}
+
+
+Sets the values of the button instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+X\+Start} & The starting x-\/coordinate of the button. \\
+\hline
+{\em my\+Y\+Start} & The starting y-\/coordinate of the button. \\
+\hline
+{\em my\+Width} & The width of the button. \\
+\hline
+{\em my\+Height} & The height of the button. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Touch\+Screen\+Buttons.\+h\item 
+Touch\+Screen\+Buttons.\+cpp\end{DoxyCompactItemize}
