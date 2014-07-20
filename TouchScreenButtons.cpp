@@ -35,6 +35,11 @@ void Button::setValues(const int myXStart, const int myYStart, const int myWidth
     button.setSize(myWidth, myHeight);
 }
 
+void Button::setSize(const int myWidth, const int myHeight)
+{
+    button.setSize(myWidth, myHeight);
+}
+
 void Button::setBorderColor(unsigned int myBorderColor)
 {
     button.setBorderColor(myBorderColor);
@@ -77,7 +82,7 @@ const int Button::getHeight()
 
 bool Button::isPressed(const int xInput, const int yInput)
 {
-    return ((xInput > button.getXStart() && xInput < button.getXEnd()) && (yInput > button.getYStart() && yInput < button.getYStart()));
+    return ((xInput > button.getXStart() && xInput < button.getXEnd()) && (yInput > button.getYStart() && yInput < button.getYEnd()));
 }
 
 void Button::draw()

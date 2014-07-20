@@ -46,6 +46,13 @@ public:
     void setValues(const int myXStart, const int myYStart, const int myWidth, const int myHeight);
 
     /**
+    @brief Sets the size of the button
+    @param myWidth      The width of the button.
+    @param myHeight     The height of the button.
+    */
+    void setSize(const int myWidth, const int myHeight);
+
+    /**
     @brief Sets the border color of the button instance.
     @param myBorderColor The border color of the button instance.
     */
