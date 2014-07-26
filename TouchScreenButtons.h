@@ -1,9 +1,10 @@
 /*! \mainpage Main Page
  *
  * \section intro_sec Introduction
- * \brief Arduino Library for creating buttons for the Seeed Studio TFT touch screen (Version 1)
+ * \brief Arduino Library for creating buttons (square buttons and radio buttons) for the Seeed Studio TFT touch screen (Version 1)
+          See example folder for tutorials.
  * \author Richard Kirkpatrick
- * \date 19 June 2014
+ * \date 26 July 2014
  * \copyright GNU Public License.
 
  * See the Wiki documentation page for more info!
@@ -111,9 +112,8 @@ private:
 
 
 /*!
-@brief RadioButton
-@brief Class for drawing a RadioButton to the Arduino touch screen.
-@details Currently, the RadioButton's size is fixed.  Future upgrades may allow user to select size.
+@class RadioButton
+@brief Class for drawing a radio button to the Arduino touch screen.
 */
 class RadioButton {
  public:

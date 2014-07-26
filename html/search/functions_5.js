@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['setbordercolor',['setBorderColor',['../class_button.html#a915d85f07149cce21cc8b61f8b8a4496',1,'Button']]],
-  ['setfillcolor',['setFillColor',['../class_button.html#a66a48aee66e78d135c3333d6364d1643',1,'Button']]],
-  ['setsize',['setSize',['../class_button.html#a12e8f5a7a8ff3207acb9fe0e3f36c88c',1,'Button']]],
-  ['setvalues',['setValues',['../class_button.html#a60111eec4fe5e1c3c71b8b183fa76fdb',1,'Button']]]
+  ['radiobutton',['RadioButton',['../class_radio_button.html#a75cb33f6fdd284ebb574cdc12ab20d45',1,'RadioButton']]],
+  ['resetbuttonstate',['resetButtonState',['../class_radio_button.html#a243a986c83a0a355d52c8e345bbf3300',1,'RadioButton']]]
 ];

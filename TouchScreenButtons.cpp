@@ -1,6 +1,6 @@
 /*
    TouchScreenButton.cpp - Library for creating buttons for the Seeed Studio TFT touch screen.
-   Created by Richard Kirkpatrick, 19 June 2014
+   Created by Richard Kirkpatrick, 26 June 2014
 */
 
 #include "Arduino.h"
