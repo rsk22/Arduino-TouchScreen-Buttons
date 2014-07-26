@@ -109,3 +109,39 @@ void Button::buttonDisplay(unsigned int myBorderColor, unsigned int myFillColor)
 }
 
 
+/*
+----------------------------------------------------------------
+                        RadioButton Class
+----------------------------------------------------------------
+*/
+RadioButton::RadioButton(const int myXStart, const int myYStart, const unsigned int myBorderColor, const unsigned int myFillColor)
+    : radioButton(myXStart, myYStart, 10, myBorderColor, myFillColor), buttonState(false)
+{
+
+}
+
+bool RadioButton::isButtonPressed(const int xInput, const int yInput)
+{
+    // Button is pressed if the input falls within the boundaries of the button
+    return (abs(xInput - radioButton.getXCoord()) < radioButton.getRadius() && abs(yInput - radioButton.getYCoord()) < radioButton.getRadius());
+}
+
+void RadioButton::draw()
+{
+    if (buttonState) {
+        radioButton.draw();
+        radioButton.fill();
+    } else {
+        radioButton.draw();
+        radioButton.setFillColor(0x0000); // Sets fill color to black
+        radioButton.fill();
+    }
+}
+
+void RadioButton::resetButtonState()
+{
+    buttonState != buttonState;
+    draw();
+}
+
+
