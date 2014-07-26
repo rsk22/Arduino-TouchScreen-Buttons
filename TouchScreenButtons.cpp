@@ -115,33 +115,80 @@ void Button::buttonDisplay(unsigned int myBorderColor, unsigned int myFillColor)
 ----------------------------------------------------------------
 */
 RadioButton::RadioButton(const int myXStart, const int myYStart, const unsigned int myBorderColor, const unsigned int myFillColor)
-    : radioButton(myXStart, myYStart, 10, myBorderColor, myFillColor), buttonState(false)
+    : radioButton(myXStart, myYStart, 10, myBorderColor, myFillColor), savedFillColor(myFillColor), buttonState(false)
 {
 
+}
+
+void RadioButton::setCenter(const int myXStart, const int myStart)
+{
+    radioButton.setCenter(myXStart, myStart);
+}
+
+void RadioButton::setBorderColor(const unsigned int myBorderColor)
+{
+    radioButton.setBorderColor(myBorderColor);
+}
+
+void RadioButton::setFillColor(const unsigned int myFillColor)
+{
+    radioButton.setFillColor(myFillColor);
+    savedFillColor = myFillColor;
+}
+
+const int RadioButton::getXStart()
+{
+    return radioButton.getXCoord();
+}
+
+const int RadioButton::getYStart()
+{
+    return radioButton.getYCoord();
+}
+
+const unsigned int RadioButton::getBorderColor()
+{
+    return radioButton.getBorderColor();
+}
+
+const unsigned int RadioButton::getFillColor()
+{
+    return savedFillColor;
 }
 
 bool RadioButton::isButtonPressed(const int xInput, const int yInput)
 {
     // Button is pressed if the input falls within the boundaries of the button
-    return (abs(xInput - radioButton.getXCoord()) < radioButton.getRadius() && abs(yInput - radioButton.getYCoord()) < radioButton.getRadius());
+    return (pow(xInput - radioButton.getXCoord(),2) + pow(yInput - radioButton.getYCoord(),2) <= pow(radioButton.getRadius(), 2));
 }
 
 void RadioButton::draw()
 {
     if (buttonState) {
         radioButton.draw();
+        radioButton.setFillColor(savedFillColor);
         radioButton.fill();
     } else {
         radioButton.draw();
-        radioButton.setFillColor(0x0000); // Sets fill color to black
+        radioButton.setFillColor(0x0000);
         radioButton.fill();
     }
 }
 
 void RadioButton::resetButtonState()
 {
-    buttonState != buttonState;
+    buttonState = !buttonState;
     draw();
+}
+
+bool RadioButton::getButtonState()
+{
+    return buttonState;
+}
+
+void RadioButton::setButtonState(bool newValue)
+{
+    buttonState = newValue;
 }
 
 

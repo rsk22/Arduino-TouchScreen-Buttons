@@ -113,6 +113,7 @@ private:
 /*!
 @brief RadioButton
 @brief Class for drawing a RadioButton to the Arduino touch screen.
+@details Currently, the RadioButton's size is fixed.  Future upgrades may allow user to select size.
 */
 class RadioButton {
  public:
@@ -125,16 +126,23 @@ class RadioButton {
     */
     RadioButton(const int myXStart, const int myYStart, const unsigned int myBorderColor, const unsigned int myFillColor);
 
-    ///@brief Sets the x-coordinate of the RadioButton.
-    void setXStart(const int myXStart);
+    /*!
+    @brief Set the xstart and ystart of the RadioButton.
+    @param myXStart     The x-coordinate of the RadioButton.
+    @param myYStart     The y-coordinate of the RadioButton.
+    */
+    void setCenter(const int myXStart, const int myYStart);
 
-    ///@brief Sets the y-coordinate of the RadioButton.
-    void setYStart(const int myYStart);
-
-    ///@brief Sets the border color of the RadioButton.
+    /*!
+    @brief Sets the border color of the RadioButton.
+    @param myBorderColor    The border color of the RadioButton.
+    */
     void setBorderColor(const unsigned int myBorderColor);
 
-    ///@brief Sets the fill color of the RadioButton.
+    /*!
+    @brief Sets the fill color of the RadioButton.
+    @param myFillColor      The fill color of the RadioButton.
+    */
     void setFillColor(const unsigned int myFillColor);
 
     ///@brief Gets the x-coordinate of the RadioButton.
@@ -160,12 +168,19 @@ class RadioButton {
     ///@brief Resets the button's state and then draws it.  If button is true, it is set to false and vice versa.
     void resetButtonState();
 
+    ///@brief Returns the button's current state.
+    bool getButtonState();
+
+    ///@brief Sets the buttons state
+    void setButtonState(bool newValue);
+
     ///@brief Draws the RadioButton to the screen based on the button's state.
     void draw();
 
  private:
     Circle radioButton;
-    bool buttonState;
+    unsigned int savedFillColor; // Used for saving the fill color
+    bool buttonState; // Saves the state of the button (On/Off)
 };
 
 
