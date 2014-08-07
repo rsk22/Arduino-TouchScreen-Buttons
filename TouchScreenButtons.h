@@ -17,7 +17,7 @@
 
 #include "Arduino.h"
 #include <TouchScreenGeometry.h>
-#include <TouchSceenStrings.h>
+#include <TouchScreenStrings.h>
 
 ///@class Button
 ///@brief Abstract class for drawing rectangular buttons to the Seeed Studio TFT touch screen.
@@ -36,6 +36,19 @@ public:
     @param myFillColor The fill color of the button. Default color is black.
     */
     Button(const int myXStart, const int myYStart, const int myWidth, const int myHeight, unsigned int myBorderColor = 0xffff, unsigned int myFillColor = 0x0000);
+
+    /**
+    @brief Parameter constructor for the button class.
+    @param myButtonText The text for the button.
+    @param myXStart The starting x-coordinate of the button.
+    @param myYStart The starting y-coordinate of the button.
+    @param myWidth The width of the button.
+    @param myHeight The height of the button.
+    @param myBorderColor The border color of the button. Default color is white.
+    @param myFillColor The fill color of the button. Default color is black.
+    @param myTextColor The color of the button's text.  Default is white.
+    */
+    Button(char* myButtonText, const int myXStart, const int myYStart, const int myWidth, const int myHeight, unsigned int myBorderColor = 0xffff, unsigned int myFillColor = 0x0000, unsigned int myTextColor = 0xffff);
 
     /**
     @brief Sets the values of the button instance.
@@ -83,6 +96,12 @@ public:
     ///@brief Gets the height of the button
     const int getHeight();
 
+    ///@brief Gets the border color of the button
+    const unsigned int getBorderColor();
+
+    ///@brief Gets the fill color of the button
+    const unsigned int getFillColor();
+
     /**
     @brief Determines if the button was pressed
     @param xScreen The x-coordinate of the user's input.
@@ -99,15 +118,13 @@ public:
 
     /**
     @brief Displays the button when pressed.
-    @details The default border color is RED and the default fill color is BLACK.  Button's border color and fill color is updated.
-             The button is then drawn.  After a 100 ms delay, the button is reset back to its original values.
-    @param myBorderColor The border color of the button. Default color is red.
-    @param myFillColor The fill color of the button. Default color is black.
+    @param myHighlightColor The color that button will display when pressed.  Default is red.
     */
-    void buttonDisplay(unsigned int myBorderColor = 0xf800, unsigned int myFillColor = 0x0000);
+    void buttonDisplay(unsigned int myHighlightColor = 0xf800);
 
 private:
     Rectangle button;
+    TouchScreenString buttonText;
 };
 
 

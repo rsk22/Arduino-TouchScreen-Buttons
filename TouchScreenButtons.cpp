@@ -9,7 +9,7 @@
 #include <stdint.h>
 #include <TouchScreen.h>
 #include <TouchScreenGeometry.h>
-#include <TouchSceenStrings.h>
+#include <TouchScreenStrings.h>
 #include <TFT.h>
 #include <math.h>
 
@@ -27,6 +27,12 @@ Button::Button()
 Button::Button(const int myXStart, const int myYStart, const int myWidth, const int myHeight, unsigned int myBorderColor, unsigned int myFillColor)
 {
     button = Rectangle(myXStart, myYStart, myWidth, myHeight, myBorderColor, myFillColor);
+}
+
+Button::Button(char* myButtonText, const int myXStart, const int myYStart, const int myWidth, const int myHeight, unsigned int myBorderColor, unsigned int myFillColor, unsigned int myTextColor)
+{
+    button = Rectangle(myXStart, myYStart, myWidth, myHeight, myBorderColor, myFillColor);
+    buttonText = TouchScreenString(myButtonText, myXStart + myWidth / 2, myYStart + myHeight / 2, 1, myTextColor);
 }
 
 void Button::setValues(const int myXStart, const int myYStart, const int myWidth, const int myHeight)
@@ -80,6 +86,16 @@ const int Button::getHeight()
     return button.getHeight();
 }
 
+const unsigned int Button::getBorderColor()
+{
+    return button.getBorderColor();
+}
+
+const unsigned int Button::getFillColor()
+{
+    return button.getFillColor();
+}
+
 bool Button::isPressed(const int xInput, const int yInput)
 {
     return ((xInput > button.getXStart() && xInput < button.getXEnd()) && (yInput > button.getYStart() && yInput < button.getYEnd()));
@@ -88,24 +104,26 @@ bool Button::isPressed(const int xInput, const int yInput)
 void Button::draw()
 {
     button.draw();
+    buttonText.drawText();
 }
 
 void Button::fill()
 {
     button.fill();
+    buttonText.drawText();
 }
 
-void Button::buttonDisplay(unsigned int myBorderColor, unsigned int myFillColor)
+void Button::buttonDisplay(unsigned int myHighlightColor)
 {
     unsigned int originalBorderColor = button.getBorderColor(); ///< Saves the original border color
-    unsigned int originalFillColor = button.getFillColor(); ///< Saves the original fill color
-    button.setBorderColor(myBorderColor);
-    button.setFillColor(myFillColor);
-    button.draw();
+    unsigned int originalTextColor = buttonText.getTextColor(); ///< Saves the original text color
+    setBorderColor(myHighlightColor);
+    buttonText.setTextColor(myHighlightColor);
+    draw();
     delay(100);
-    button.setBorderColor(originalBorderColor);
-    button.setFillColor(originalFillColor);
-    button.draw();
+    setBorderColor(originalBorderColor);
+    buttonText.setTextColor(originalTextColor);
+    draw();
 }
 
 
