@@ -35,7 +35,7 @@ public:
     @param myBorderColor The border color of the button. Default color is white.
     @param myFillColor The fill color of the button. Default color is black.
     */
-    Button(const int myXStart, const int myYStart, const int myWidth, const int myHeight, unsigned int myBorderColor, unsigned int myFillColor);
+    Button(const int myXStart, const int myYStart, const int myWidth, const int myHeight, unsigned int myBorderColor = 0xffff, unsigned int myFillColor = 0x0000);
 
     /**
     @brief Sets the values of the button instance.
