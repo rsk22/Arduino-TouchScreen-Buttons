@@ -41,6 +41,34 @@ void Button::setValues(const int myXStart, const int myYStart, const int myWidth
     button.setSize(myWidth, myHeight);
 }
 
+void Button::setTextValues(char* myText, const int myXStart, const int myYStart, const int myFontSize, const unsigned int myTextColor)
+{
+    buttonText.setText(myText);
+    buttonText.setTextCoord(myXStart, myYStart);
+    buttonText.setFontSize(myFontSize);
+    buttonText.setTextColor(myTextColor);
+}
+
+void Button::setText(char* myText)
+{
+    buttonText.setText(myText);
+}
+
+void Button::setTextCoord(const int myXStart, const int myYStart)
+{
+    buttonText.setTextCoord(myXStart, myYStart);
+}
+
+void Button::setFontSize(const int myFontSize)
+{
+    buttonText.setFontSize(myFontSize);
+}
+
+void Button::setTextColor(const unsigned int myTextColor)
+{
+    buttonText.setTextColor(myTextColor);
+}
+
 void Button::setSize(const int myWidth, const int myHeight)
 {
     button.setSize(myWidth, myHeight);

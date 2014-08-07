@@ -27,7 +27,7 @@ public:
     Button();
 
     /**
-    @brief Parameter constructor for the button class.
+    @brief Parameter constructor for the button class.  This constructor assumes the user does not want any button text or that it will be created later.
     @param myXStart The starting x-coordinate of the button.
     @param myYStart The starting y-coordinate of the button.
     @param myWidth The width of the button.
@@ -35,10 +35,15 @@ public:
     @param myBorderColor The border color of the button. Default color is white.
     @param myFillColor The fill color of the button. Default color is black.
     */
-    Button(const int myXStart, const int myYStart, const int myWidth, const int myHeight, unsigned int myBorderColor = 0xffff, unsigned int myFillColor = 0x0000);
+    Button(const int myXStart,
+           const int myYStart,
+           const int myWidth,
+           const int myHeight,
+           unsigned int myBorderColor = 0xffff,
+           unsigned int myFillColor = 0x0000);
 
     /**
-    @brief Parameter constructor for the button class.
+    @brief Parameter constructor for the button class.  This constructor allows the user to specify the button's text.
     @param myButtonText The text for the button.
     @param myXStart The starting x-coordinate of the button.
     @param myYStart The starting y-coordinate of the button.
@@ -48,7 +53,14 @@ public:
     @param myFillColor The fill color of the button. Default color is black.
     @param myTextColor The color of the button's text.  Default is white.
     */
-    Button(char* myButtonText, const int myXStart, const int myYStart, const int myWidth, const int myHeight, unsigned int myBorderColor = 0xffff, unsigned int myFillColor = 0x0000, unsigned int myTextColor = 0xffff);
+    Button(char* myButtonText,
+           const int myXStart,
+           const int myYStart,
+           const int myWidth,
+           const int myHeight,
+           unsigned int myBorderColor = 0xffff,
+           unsigned int myFillColor = 0x0000,
+           unsigned int myTextColor = 0xffff);
 
     /**
     @brief Sets the values of the button instance.
@@ -58,6 +70,41 @@ public:
     @param myHeight The height of the button.
     */
     void setValues(const int myXStart, const int myYStart, const int myWidth, const int myHeight);
+
+    /**
+    @brief Sets the values for the button's text.
+    @param myText   The text for the button.
+    @param myXStart The x-coordinate for the text.
+    @param myYStart The y-coordinate for the text.
+    @param myFont The font size for the text.
+    @param myTextColor The font color for the text.  Default is white.
+    */
+    void setTextValues(char* myText, const int myXStart, const int myYStart, const int myFontSize, const unsigned int myTextColor = 0xffff);
+
+    /**
+    @brief Sets the text for the button.
+    @param myText   The text for the button.
+    */
+    void setText(char* myText);
+
+    /**
+    @brief Sets the coordinates for the text
+    @param myXStart The x-coordinate for the text.
+    @param myYStart The y-coordinate for the text.
+    */
+    void setTextCoord(const int myXStart, const int myYStart);
+
+    /**
+    @brief Sets the font size for the text.
+    @param myFont The font size for the text.
+    */
+    void setFontSize(const int myFontSize);
+
+    /**
+    @brief Sets the text color.
+    @param myTextColor The font color for the text.
+    */
+    void setTextColor(const unsigned int myTextColor);
 
     /**
     @brief Sets the size of the button
