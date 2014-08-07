@@ -149,6 +149,21 @@ public:
     ///@brief Gets the fill color of the button
     const unsigned int getFillColor();
 
+    ///@brief Gets the button's text
+    char* getText();
+
+    ///@brief Gets the x-coordinate for the button's text
+    const int getTextXStart();
+
+    ///@brief Gets the y-coordinate for the button's text
+    const int getTextYStart();
+
+    ///@brief Gets the font size for the button's text
+    const int getFontSize();
+
+    ///@brief Gets the text color for the button's text
+    const unsigned int getTextColor();
+
     /**
     @brief Determines if the button was pressed
     @param xScreen The x-coordinate of the user's input.

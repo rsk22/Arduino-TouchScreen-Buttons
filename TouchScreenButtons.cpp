@@ -124,6 +124,31 @@ const unsigned int Button::getFillColor()
     return button.getFillColor();
 }
 
+char* Button::getText()
+{
+    return buttonText.getText();
+}
+
+const int Button::getTextXStart()
+{
+    return buttonText.getXStart();
+}
+
+const int Button::getTextYStart()
+{
+    return buttonText.getYStart();
+}
+
+const int Button::getFontSize()
+{
+    return buttonText.getFontSize();
+}
+
+const unsigned int Button::getTextColor()
+{
+    return buttonText.getTextColor();
+}
+
 bool Button::isPressed(const int xInput, const int yInput)
 {
     return ((xInput > button.getXStart() && xInput < button.getXEnd()) && (yInput > button.getYStart() && yInput < button.getYEnd()));
