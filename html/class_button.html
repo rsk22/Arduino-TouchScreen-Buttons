@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>Arduino Touch Screen Buttons Class: Button Class Reference</title>
+<title>Arduino Touch Screen Buttons: Button Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Arduino Touch Screen Buttons Class
+   <div id="projectname">Arduino Touch Screen Buttons
    </div>
   </td>
  </tr>
@@ -100,12 +100,30 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a3b36df1ae23c58aedb9e15a713159459">Button</a> ()</td></tr>
 <tr class="memdesc:a3b36df1ae23c58aedb9e15a713159459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for the <a class="el" href="class_button.html" title="Abstract class for drawing rectangular buttons to the Seeed Studio TFT touch screen. ">Button</a> class. <br /></td></tr>
 <tr class="separator:a3b36df1ae23c58aedb9e15a713159459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05d9eb876fbf996d19ccd50701d520d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a05d9eb876fbf996d19ccd50701d520d6">Button</a> (const int myXStart, const int myYStart, const int myWidth, const int myHeight, unsigned int myBorderColor, unsigned int myFillColor)</td></tr>
-<tr class="memdesc:a05d9eb876fbf996d19ccd50701d520d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter constructor for the button class.  <a href="#a05d9eb876fbf996d19ccd50701d520d6">More...</a><br /></td></tr>
-<tr class="separator:a05d9eb876fbf996d19ccd50701d520d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe00aa8334b8847d281b7e51a4f674b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#abe00aa8334b8847d281b7e51a4f674b9">Button</a> (const int myXStart, const int myYStart, const int myWidth, const int myHeight, unsigned int myBorderColor=0xffff, unsigned int myFillColor=0x0000)</td></tr>
+<tr class="memdesc:abe00aa8334b8847d281b7e51a4f674b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter constructor for the button class. This constructor assumes the user does not want any button text or that it will be created later.  <a href="#abe00aa8334b8847d281b7e51a4f674b9">More...</a><br /></td></tr>
+<tr class="separator:abe00aa8334b8847d281b7e51a4f674b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1db15692589fc2f9f9cbd81e29e518a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a1db15692589fc2f9f9cbd81e29e518a6">Button</a> (char *myButtonText, const int myXStart, const int myYStart, const int myWidth, const int myHeight, unsigned int myBorderColor=0xffff, unsigned int myFillColor=0x0000, unsigned int myTextColor=0xffff)</td></tr>
+<tr class="memdesc:a1db15692589fc2f9f9cbd81e29e518a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter constructor for the button class. This constructor allows the user to specify the button's text.  <a href="#a1db15692589fc2f9f9cbd81e29e518a6">More...</a><br /></td></tr>
+<tr class="separator:a1db15692589fc2f9f9cbd81e29e518a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60111eec4fe5e1c3c71b8b183fa76fdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a60111eec4fe5e1c3c71b8b183fa76fdb">setValues</a> (const int myXStart, const int myYStart, const int myWidth, const int myHeight)</td></tr>
 <tr class="memdesc:a60111eec4fe5e1c3c71b8b183fa76fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the values of the button instance.  <a href="#a60111eec4fe5e1c3c71b8b183fa76fdb">More...</a><br /></td></tr>
 <tr class="separator:a60111eec4fe5e1c3c71b8b183fa76fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2addc4b12fa25b0cfcad0bbfe0d7327e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a2addc4b12fa25b0cfcad0bbfe0d7327e">setTextValues</a> (char *myText, const int myXStart, const int myYStart, const int myFontSize, const unsigned int myTextColor=0xffff)</td></tr>
+<tr class="memdesc:a2addc4b12fa25b0cfcad0bbfe0d7327e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the values for the button's text.  <a href="#a2addc4b12fa25b0cfcad0bbfe0d7327e">More...</a><br /></td></tr>
+<tr class="separator:a2addc4b12fa25b0cfcad0bbfe0d7327e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a77b819b9ec491fb19273fefb494b00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a0a77b819b9ec491fb19273fefb494b00">setText</a> (char *myText)</td></tr>
+<tr class="memdesc:a0a77b819b9ec491fb19273fefb494b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the text for the button.  <a href="#a0a77b819b9ec491fb19273fefb494b00">More...</a><br /></td></tr>
+<tr class="separator:a0a77b819b9ec491fb19273fefb494b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad166128c600d9512d1284c95394b9628"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#ad166128c600d9512d1284c95394b9628">setTextCoord</a> (const int myXStart, const int myYStart)</td></tr>
+<tr class="memdesc:ad166128c600d9512d1284c95394b9628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the coordinates for the text.  <a href="#ad166128c600d9512d1284c95394b9628">More...</a><br /></td></tr>
+<tr class="separator:ad166128c600d9512d1284c95394b9628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa476511a59f0464a50061dd323a50e71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#aa476511a59f0464a50061dd323a50e71">setFontSize</a> (const int myFontSize)</td></tr>
+<tr class="memdesc:aa476511a59f0464a50061dd323a50e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font size for the text.  <a href="#aa476511a59f0464a50061dd323a50e71">More...</a><br /></td></tr>
+<tr class="separator:aa476511a59f0464a50061dd323a50e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816edd12ed858c4faa5d1d06f7c18a3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a816edd12ed858c4faa5d1d06f7c18a3d">setTextColor</a> (const unsigned int myTextColor)</td></tr>
+<tr class="memdesc:a816edd12ed858c4faa5d1d06f7c18a3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the text color.  <a href="#a816edd12ed858c4faa5d1d06f7c18a3d">More...</a><br /></td></tr>
+<tr class="separator:a816edd12ed858c4faa5d1d06f7c18a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12e8f5a7a8ff3207acb9fe0e3f36c88c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a12e8f5a7a8ff3207acb9fe0e3f36c88c">setSize</a> (const int myWidth, const int myHeight)</td></tr>
 <tr class="memdesc:a12e8f5a7a8ff3207acb9fe0e3f36c88c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the size of the button.  <a href="#a12e8f5a7a8ff3207acb9fe0e3f36c88c">More...</a><br /></td></tr>
 <tr class="separator:a12e8f5a7a8ff3207acb9fe0e3f36c88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,6 +157,34 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#ae9d2afc653f22428d42e796d4749a843">getHeight</a> ()</td></tr>
 <tr class="memdesc:ae9d2afc653f22428d42e796d4749a843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the height of the button. <br /></td></tr>
 <tr class="separator:ae9d2afc653f22428d42e796d4749a843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b8783f0da4401dbfa17d634e32ae2c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b8783f0da4401dbfa17d634e32ae2c0"></a>
+const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a9b8783f0da4401dbfa17d634e32ae2c0">getBorderColor</a> ()</td></tr>
+<tr class="memdesc:a9b8783f0da4401dbfa17d634e32ae2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the border color of the button. <br /></td></tr>
+<tr class="separator:a9b8783f0da4401dbfa17d634e32ae2c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7034dbc3856c29efe0dbb8572fc3c0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7034dbc3856c29efe0dbb8572fc3c0a"></a>
+const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#af7034dbc3856c29efe0dbb8572fc3c0a">getFillColor</a> ()</td></tr>
+<tr class="memdesc:af7034dbc3856c29efe0dbb8572fc3c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the fill color of the button. <br /></td></tr>
+<tr class="separator:af7034dbc3856c29efe0dbb8572fc3c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad845587c3cfa8afbb3217a4870837165"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad845587c3cfa8afbb3217a4870837165"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#ad845587c3cfa8afbb3217a4870837165">getText</a> ()</td></tr>
+<tr class="memdesc:ad845587c3cfa8afbb3217a4870837165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the button's text. <br /></td></tr>
+<tr class="separator:ad845587c3cfa8afbb3217a4870837165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a439fa542ea51bfd750a95b311cd005c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a439fa542ea51bfd750a95b311cd005c7"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a439fa542ea51bfd750a95b311cd005c7">getTextXStart</a> ()</td></tr>
+<tr class="memdesc:a439fa542ea51bfd750a95b311cd005c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the x-coordinate for the button's text. <br /></td></tr>
+<tr class="separator:a439fa542ea51bfd750a95b311cd005c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0f44004eb8380f7380e9f7cb35f8ff3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0f44004eb8380f7380e9f7cb35f8ff3"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#af0f44004eb8380f7380e9f7cb35f8ff3">getTextYStart</a> ()</td></tr>
+<tr class="memdesc:af0f44004eb8380f7380e9f7cb35f8ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the y-coordinate for the button's text. <br /></td></tr>
+<tr class="separator:af0f44004eb8380f7380e9f7cb35f8ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1bd355f2a2f497ea3e6b2e2db775323"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1bd355f2a2f497ea3e6b2e2db775323"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#ab1bd355f2a2f497ea3e6b2e2db775323">getFontSize</a> ()</td></tr>
+<tr class="memdesc:ab1bd355f2a2f497ea3e6b2e2db775323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the font size for the button's text. <br /></td></tr>
+<tr class="separator:ab1bd355f2a2f497ea3e6b2e2db775323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3092e6a46d2271511f58977c7be30a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c3092e6a46d2271511f58977c7be30a"></a>
+const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a0c3092e6a46d2271511f58977c7be30a">getTextColor</a> ()</td></tr>
+<tr class="memdesc:a0c3092e6a46d2271511f58977c7be30a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the text color for the button's text. <br /></td></tr>
+<tr class="separator:a0c3092e6a46d2271511f58977c7be30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2da26aebe4d13bb3f930dab9a1361222"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a2da26aebe4d13bb3f930dab9a1361222">isPressed</a> (const int xScreen, const int yScreen)</td></tr>
 <tr class="memdesc:a2da26aebe4d13bb3f930dab9a1361222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the button was pressed.  <a href="#a2da26aebe4d13bb3f930dab9a1361222">More...</a><br /></td></tr>
 <tr class="separator:a2da26aebe4d13bb3f930dab9a1361222"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,14 +196,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#a4b365dabfed0a4664979bb2087b5dd4a">fill</a> ()</td></tr>
 <tr class="memdesc:a4b365dabfed0a4664979bb2087b5dd4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the button. <br /></td></tr>
 <tr class="separator:a4b365dabfed0a4664979bb2087b5dd4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2122745381c7a5366d9514ba34daee6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#ad2122745381c7a5366d9514ba34daee6">buttonDisplay</a> (unsigned int myBorderColor=0xf800, unsigned int myFillColor=0x0000)</td></tr>
-<tr class="memdesc:ad2122745381c7a5366d9514ba34daee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the button when pressed.  <a href="#ad2122745381c7a5366d9514ba34daee6">More...</a><br /></td></tr>
-<tr class="separator:ad2122745381c7a5366d9514ba34daee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac716409b2dfff41c8117589ef45474e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html#ac716409b2dfff41c8117589ef45474e4">buttonDisplay</a> (unsigned int myHighlightColor=0xf800)</td></tr>
+<tr class="memdesc:ac716409b2dfff41c8117589ef45474e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the button when pressed.  <a href="#ac716409b2dfff41c8117589ef45474e4">More...</a><br /></td></tr>
+<tr class="separator:ac716409b2dfff41c8117589ef45474e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract class for drawing rectangular buttons to the Seeed Studio TFT touch screen. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a05d9eb876fbf996d19ccd50701d520d6"></a>
+<a class="anchor" id="abe00aa8334b8847d281b7e51a4f674b9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -205,7 +251,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 
-<p>Parameter constructor for the button class. </p>
+<p>Parameter constructor for the button class. This constructor assumes the user does not want any button text or that it will be created later. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">myXStart</td><td>The starting x-coordinate of the button. </td></tr>
@@ -220,22 +266,57 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad2122745381c7a5366d9514ba34daee6"></a>
+<a class="anchor" id="a1db15692589fc2f9f9cbd81e29e518a6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Button::buttonDisplay </td>
+          <td class="memname">Button::Button </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>myBorderColor</em> = <code>0xf800</code>, </td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>myButtonText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>myXStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>myYStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>myWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>myHeight</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>myFillColor</em> = <code>0x0000</code>&#160;</td>
+          <td class="paramname"><em>myBorderColor</em> = <code>0xffff</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>myFillColor</em> = <code>0x0000</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>myTextColor</em> = <code>0xffff</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -245,16 +326,47 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 
-<p>Displays the button when pressed. </p>
-<p>The default border color is RED and the default fill color is BLACK. <a class="el" href="class_button.html" title="Abstract class for drawing rectangular buttons to the Seeed Studio TFT touch screen. ">Button</a>'s border color and fill color is updated. The button is then drawn. After a 100 ms delay, the button is reset back to its original values. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Parameter constructor for the button class. This constructor allows the user to specify the button's text. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">myBorderColor</td><td>The border color of the button. Default color is red. </td></tr>
+    <tr><td class="paramname">myButtonText</td><td>The text for the button. </td></tr>
+    <tr><td class="paramname">myXStart</td><td>The starting x-coordinate of the button. </td></tr>
+    <tr><td class="paramname">myYStart</td><td>The starting y-coordinate of the button. </td></tr>
+    <tr><td class="paramname">myWidth</td><td>The width of the button. </td></tr>
+    <tr><td class="paramname">myHeight</td><td>The height of the button. </td></tr>
+    <tr><td class="paramname">myBorderColor</td><td>The border color of the button. Default color is white. </td></tr>
     <tr><td class="paramname">myFillColor</td><td>The fill color of the button. Default color is black. </td></tr>
+    <tr><td class="paramname">myTextColor</td><td>The color of the button's text. Default is white. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac716409b2dfff41c8117589ef45474e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Button::buttonDisplay </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>myHighlightColor</em> = <code>0xf800</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Displays the button when pressed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">myHighlightColor</td><td>The color that button will display when pressed. Default is red. </td></tr>
   </table>
   </dd>
 </dl>
 <p>&lt; Saves the original border color</p>
-<p>&lt; Saves the original fill color </p>
+<p>&lt; Saves the original text color </p>
 
 </div>
 </div>
@@ -342,6 +454,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a class="anchor" id="aa476511a59f0464a50061dd323a50e71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Button::setFontSize </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>myFontSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the font size for the text. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">myFontSize</td><td>The font size for the text. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a12e8f5a7a8ff3207acb9fe0e3f36c88c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -371,6 +507,145 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <table class="params">
     <tr><td class="paramname">myWidth</td><td>The width of the button. </td></tr>
     <tr><td class="paramname">myHeight</td><td>The height of the button. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0a77b819b9ec491fb19273fefb494b00"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Button::setText </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>myText</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the text for the button. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">myText</td><td>The text for the button. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a816edd12ed858c4faa5d1d06f7c18a3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Button::setTextColor </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>myTextColor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the text color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">myTextColor</td><td>The font color for the text. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad166128c600d9512d1284c95394b9628"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Button::setTextCoord </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>myXStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>myYStart</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the coordinates for the text. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">myXStart</td><td>The x-coordinate for the text. </td></tr>
+    <tr><td class="paramname">myYStart</td><td>The y-coordinate for the text. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2addc4b12fa25b0cfcad0bbfe0d7327e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Button::setTextValues </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>myText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>myXStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>myYStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>myFontSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>myTextColor</em> = <code>0xffff</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the values for the button's text. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">myText</td><td>The text for the button. </td></tr>
+    <tr><td class="paramname">myXStart</td><td>The x-coordinate for the text. </td></tr>
+    <tr><td class="paramname">myYStart</td><td>The y-coordinate for the text. </td></tr>
+    <tr><td class="paramname">myFontSize</td><td>The font size for the text. </td></tr>
+    <tr><td class="paramname">myTextColor</td><td>The font color for the text. Default is white. </td></tr>
   </table>
   </dd>
 </dl>
@@ -433,7 +708,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 26 2014 14:42:40 for Arduino Touch Screen Buttons Class by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 6 2014 23:05:06 for Arduino Touch Screen Buttons by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

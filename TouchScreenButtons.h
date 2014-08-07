@@ -76,7 +76,7 @@ public:
     @param myText   The text for the button.
     @param myXStart The x-coordinate for the text.
     @param myYStart The y-coordinate for the text.
-    @param myFont The font size for the text.
+    @param myFontSize The font size for the text.
     @param myTextColor The font color for the text.  Default is white.
     */
     void setTextValues(char* myText, const int myXStart, const int myYStart, const int myFontSize, const unsigned int myTextColor = 0xffff);
@@ -96,7 +96,7 @@ public:
 
     /**
     @brief Sets the font size for the text.
-    @param myFont The font size for the text.
+    @param myFontSize The font size for the text.
     */
     void setFontSize(const int myFontSize);
 
