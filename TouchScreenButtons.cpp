@@ -24,7 +24,7 @@ Button::Button()
     button = Rectangle();
 }
 
-Button::Button(const int myXStart, const int myYStart, const int myWidth, const int myHeight, unsigned int myBorderColor = 0xffff, unsigned int myFillColor = 0x0000)
+Button::Button(const int myXStart, const int myYStart, const int myWidth, const int myHeight, unsigned int myBorderColor, unsigned int myFillColor)
 {
     button = Rectangle(myXStart, myYStart, myWidth, myHeight, myBorderColor, myFillColor);
 }
